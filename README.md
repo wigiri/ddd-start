@@ -15,6 +15,11 @@ git clone https://github.com/madvirus/ddd-start.git
 
 git을 모른다면 우측 상단의 Download ZIP을 클릭해서 코드를 다운로드 받고 압축을 푼다.
 
+## MYSQL 실행
+```
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --name w-mysql mysql:5.7
+```
+
 ## MySQL DB 생성 및 데이터 초기화
 
 * src/sql/ddl.sql 파일을 이용해서 데이터베이스와 테이블 생성

@@ -1,5 +1,6 @@
 package com.myshop.common.event;
 
+
 import net.jodah.typetools.TypeResolver;
 
 public interface EventHandler<T> {

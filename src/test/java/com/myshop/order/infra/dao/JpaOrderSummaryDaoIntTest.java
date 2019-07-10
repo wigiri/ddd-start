@@ -5,11 +5,10 @@ import com.myshop.SpringIntTestConfig;
 import com.myshop.order.query.dao.OrderSummaryDao;
 import com.myshop.order.query.dao.OrderSummarySpecs;
 import com.myshop.order.query.dto.OrderSummary;
-import com.myshop.order.query.dto.OrderSummary_;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
@@ -20,7 +19,7 @@ import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringIntTestConfig
-@SpringApplicationConfiguration(ShopApplication.class)
+@SpringJUnitWebConfig(ShopApplication.class)
 public class JpaOrderSummaryDaoIntTest {
     @Autowired
     private OrderSummaryDao orderViewDao;

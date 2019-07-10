@@ -13,7 +13,7 @@
 <jsp:include page="/WEB-INF/view/common/navi.jsp" />
 
 <div class="container">
-    <form:form commandName="orderReq" cssClass="form-horizontal" action="/orders/order">
+    <form:form modelAttribute="orderReq" cssClass="form-horizontal" action="/orders/order">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">주문자</h3>
